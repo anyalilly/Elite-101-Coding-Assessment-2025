@@ -160,11 +160,11 @@ check if valid
 ask user for timeslot
 check if valid
 for table in tables:
-if size = party number and table is available
+if size >= party number and table is available
 append to list
 for table in tables:
 check for sums between all available tables
-if sum = party number
+if sum >= party number
 append to list 
 
 print list
