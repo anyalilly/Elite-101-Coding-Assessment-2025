@@ -13,7 +13,7 @@ append to add an object to the end of a list #https://www.digitalocean.com/commu
 
 Pseudocode:
 empty list
-enter timeslot to check
+have user enter timeslot
 check if timeslot is valid
 for loop:
 for each table in tables:
@@ -88,7 +88,7 @@ def find_table_with_size():
    for i in range(1,
    len(all_tables[time])): # starts from one because 0 is the index:
      table_party = all_tables[0][i][3]
-     if all_tables[time][i] == 'o' and int(table_party) >= party_size: # checks if there's an o, or if the table is free
+     if all_tables[time][i] == 'o' and int(table_party) >= party_size: # checks if there's an o, or if the table is free, https://www.freecodecamp.org/news/python-convert-string-to-int-how-to-cast-a-string-in-python/ to convert the table party to int
       table = (all_tables[0][i])
       print(f"{table} is available")
       return table
@@ -145,6 +145,27 @@ def find_all_tables_with_size():
 # find_all_tables_with_size()
 
 """
-I didn't get a chance to get to level 4, but 
+I didn't get a chance to get to level 4.
+Input: Timeslot and Number of People
+Output: List of tables singularly or added together that can seat that amount of people at that time
+Possible tools: 
+int input for party size and timeslot
+empty list to store the combinations and tables
+extracting number from string
+adding the numbers (number of seats) of one table and another
+pseudocode:
+empty list
+ask user for party number
+check if valid
+ask user for timeslot
+check if valid
+for table in tables:
+if size = party number and table is available
+append to list
+for table in tables:
+check for sums between all available tables
+if sum = party number
+append to list 
 
+print list
 """
